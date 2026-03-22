@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Contact Manager</string>
+
+    <!-- Навигация -->
+    <string name="title_contacts">Контакты</string>
+    <string name="title_events">События</string>
+    <string name="title_logs">Журнал</string>
+    <string name="title_dashboard">Статистика</string>
+
+    <!-- Статусы контактов -->
+    <string name="status_new">Новый</string>
+    <string name="status_in_progress">В работе</string>
+    <string name="status_negotiation">Переговоры</string>
+    <string name="status_converted">Конвертирован</string>
+    <string name="status_lost">Потерян</string>
+
+    <!-- Диалоги -->
+    <string name="add_contact">Добавить контакт</string>
+    <string name="create_new_contact">Создать новый контакт</string>
+    <string name="import_from_phonebook">Импортировать из телефонной книги</string>
+    <string name="new_contact">Новый контакт</string>
+    <string name="edit_contact">Редактировать контакт</string>
+    <string name="contact_details">Детали контакта</string>
+    <string name="delete_contact">Удаление контакта</string>
+    <string name="delete_contact_confirmation">Вы уверены, что хотите удалить контакт \'%s\'?</string>
+    <string name="search_contacts">Поиск контактов</string>
+    <string name="select_contact">Выберите контакт</string>
+
+    <!-- Сообщения -->
+    <string name="contact_added">Контакт добавлен</string>
+    <string name="contact_updated">Контакт обновлен</string>
+    <string name="contact_deleted">Контакт удален</string>
+    <string name="contact_imported">Контакт \'%s\' импортирован</string>
+    <string name="name_phone_required">Имя и телефон обязательны</string>
+    <string name="contacts_not_found">Контакты не найдены</string>
+    <string name="search_min_length">Введите минимум %d символа</string>
+    <string name="contacts_permission_required">Необходимо разрешение на чтение контактов</string>
+
+    <!-- Поля контакта -->
+    <string name="name">Имя</string>
+    <string name="phone">Телефон</string>
+    <string name="email">Email</string>
+    <string name="company">Компания</string>
+    <string name="position">Должность</string>
+    <string name="status">Статус</string>
+    <string name="note">Примечание</string>
+    <string name="not_specified">не указан</string>
+    <string name="no_notes">нет</string>
+
+    <!-- Кнопки -->
+    <string name="add">Добавить</string>
+    <string name="save">Сохранить</string>
+    <string name="edit">Редактировать</string>
+    <string name="delete">Удалить</string>
+    <string name="cancel">Отмена</string>
+    <string name="ok">OK</string>
+
+    <!-- События -->
+    <string name="add_event">Добавить событие</string>
+    <string name="new_event">Новое событие</string>
+    <string name="edit_event">Редактировать событие</string>
+    <string name="event_details">Детали события</string>
+    <string name="delete_event">Удаление события</string>
+    <string name="delete_event_confirmation">Вы уверены, что хотите удалить событие?</string>
+    <string name="event_added">Событие добавлено</string>
+    <string name="event_updated">Событие обновлено</string>
+    <string name="event_deleted">Событие удалено</string>
+    <string name="select_contact_first">Сначала выберите контакт</string>
+    <string name="select_date">Выбрать дату</string>
+    <string name="select_time">Выбрать время</string>
+    <string name="event_type">Тип события</string>
+    <string name="meeting">Встреча</string>
+    <string name="call">Звонок</string>
+    <string name="other">Другое</string>
+    <string name="sync_to_calendar">Синхронизировать с календарем</string>
+
+    <!-- Журнал контактов -->
+    <string name="contact_log">Журнал контактов</string>
+    <string name="add_log">Добавить запись</string>
+    <string name="log_details">Детали записи</string>
+    <string name="delete_log">Удаление записи</string>
+    <string name="delete_log_confirmation">Вы уверены, что хотите удалить эту запись?</string>
+    <string name="log_added">Запись добавлена</string>
+    <string name="log_deleted">Запись удалена</string>
+    <string name="contact_type">Тип контакта</string>
+    <string name="contact_quality">Качество контакта</string>
+    <string name="call_type">Звонок</string>
+    <string name="sms_type">SMS</string>
+    <string name="whatsapp_type">WhatsApp</string>
+    <string name="telegram_type">Telegram</string>
+    <string name="email_type">Email</string>
+    <string name="meeting_type">Личная встреча</string>
+
+</resources>

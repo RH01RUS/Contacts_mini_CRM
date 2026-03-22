@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Информация о контакте -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/tvContactName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="?android:attr/textColorPrimary" />
+
+        <TextView
+            android:id="@+id/tvContactPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="?android:attr/textColorSecondary"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+
+    <!-- Кнопка добавления события -->
+    <Button
+        android:id="@+id/btnAddEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+ Добавить событие"
+        android:backgroundTint="?attr/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Счетчики событий в виде чипсов -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Статистика событий:"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="?android:attr/textColorPrimary"
+        android:layout_marginBottom="8dp" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:chipSpacing="8dp"
+        app:singleLine="false">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipNew"
+            style="@style/Widget.MaterialComponents.Chip.Entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Встречи (0)"
+            app:chipBackgroundColor="#4CAF50"
+            app:chipIconVisible="false"
+            app:closeIconVisible="false"
+            android:textColor="@android:color/white" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipInProgress"
+            style="@style/Widget.MaterialComponents.Chip.Entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Звонки (0)"
+            app:chipBackgroundColor="#2196F3"
+            app:chipIconVisible="false"
+            app:closeIconVisible="false"
+            android:textColor="@android:color/white" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipNegotiation"
+            style="@style/Widget.MaterialComponents.Chip.Entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Другое (0)"
+            app:chipBackgroundColor="#FF9800"
+            app:chipIconVisible="false"
+            app:closeIconVisible="false"
+            android:textColor="@android:color/white" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipConverted"
+            style="@style/Widget.MaterialComponents.Chip.Entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            app:chipBackgroundColor="#9C27B0"
+            app:chipIconVisible="false"
+            app:closeIconVisible="false"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipLost"
+            style="@style/Widget.MaterialComponents.Chip.Entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Всего: 0"
+            app:chipBackgroundColor="#F44336"
+            app:chipIconVisible="false"
+            app:closeIconVisible="false"
+            android:textColor="@android:color/white" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <!-- Блок "Последние события" полностью удален -->
+    <!-- Удалены RecyclerView и TextView для списка событий -->
+
+</LinearLayout>
