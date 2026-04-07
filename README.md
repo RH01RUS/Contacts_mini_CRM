@@ -1,3 +1,13 @@
+![Android](https://img.shields.io/badge/Android-34-green)
+![Kotlin](https://img.shields.io/badge/Kotlin-1.9-purple)
+![XML](https://img.shields.io/badge/UI-XML%20%2B%20ViewBinding-orange)
+![Room](https://img.shields.io/badge/Room-2.6.1-brightgreen)
+![KSP](https://img.shields.io/badge/KSP-1.9.0-blue)
+![Coroutines](https://img.shields.io/badge/Coroutines-1.7.3-red)
+![Navigation](https://img.shields.io/badge/Navigation-2.7.7-yellow)
+![Material Design](https://img.shields.io/badge/Material%20Design-3-blueviolet)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
 # Contact Manager  mini CRM
 
 **Краткое описание:**  
