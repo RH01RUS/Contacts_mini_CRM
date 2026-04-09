@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Telegram-like palette (Day) -->
+    <color name="tg_blue">#FF2AABEE</color>
+    <color name="tg_bg">#FFF6F7F8</color>
+    <color name="tg_surface">#FFFFFFFF</color>
+    <color name="tg_surface_variant">#FFE9EEF2</color>
+    <color name="tg_on_surface">#FF0B0F14</color>
+    <color name="tg_on_surface_variant">#FF4A5562</color>
+
+    <!-- Badge/icon palette (Day) -->
+    <color name="badge_blue">#FF2AABEE</color>
+    <color name="badge_green">#FF4CAF50</color>
+    <color name="badge_orange">#FFFF9800</color>
+    <color name="badge_red">#FFF44336</color>
+    <color name="badge_purple">#FF9C27B0</color>
+
+    <!-- dialog_contact_events.xml chips -->
+    <color name="event_chip_meetings">#4CAF50</color>
+    <color name="event_chip_calls">#2196F3</color>
+    <color name="event_chip_other">#FF9800</color>
+    <color name="event_chip_extra">#9C27B0</color>
+    <color name="event_chip_total">#F44336</color>
 </resources>

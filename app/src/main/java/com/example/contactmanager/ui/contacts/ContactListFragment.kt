@@ -64,8 +64,7 @@ class ContactListFragment : Fragment() {
     private lateinit var contactAdapter: ContactAdapter
     private lateinit var searchView: SearchView
     private lateinit var fabAddContact: FloatingActionButton
-    private lateinit var emptyView: LinearLayout
-    private lateinit var emptyTextView: TextView
+    private lateinit var emptyView: com.example.contactmanager.databinding.ViewEmptyStateBinding
     private lateinit var progressBar: ProgressBar
 
     // Чипсы для категорий
@@ -144,7 +143,9 @@ class ContactListFragment : Fragment() {
         searchView = binding.searchView
         fabAddContact = binding.fabAddContact
         emptyView = binding.emptyView
-        emptyTextView = emptyView.findViewById(R.id.emptyTextView)
+        emptyView.emptyIcon.setImageResource(R.drawable.ic_contacts_empty)
+        emptyView.emptyTitle.text = getString(R.string.empty_contacts_title)
+        emptyView.emptySubtitle.text = getString(R.string.empty_contacts_subtitle)
         progressBar = binding.progressBar
 
         chipGroupCategory = binding.chipGroupCategory
@@ -337,10 +338,10 @@ class ContactListFragment : Fragment() {
 
     private fun updateEmptyView(isEmpty: Boolean) {
         if (isEmpty) {
-            emptyView.visibility = View.VISIBLE
+            emptyView.root.visibility = View.VISIBLE
             recyclerView.visibility = View.GONE
         } else {
-            emptyView.visibility = View.GONE
+            emptyView.root.visibility = View.GONE
             recyclerView.visibility = View.VISIBLE
         }
     }
@@ -656,7 +657,7 @@ class ContactListFragment : Fragment() {
         tvContactInfo.text = "${contact.name}\n${contact.phone}"
 
         // Настройка спиннера типов
-        val contactTypes = listOf("Звонок", "SMS", "WhatsApp", "Telegram", "Email", "Личная встреча")
+        val contactTypes = listOf("Звонок", "SMS", "Email", "WhatsApp", "Telegram",  "Личная встреча")
         val typeAdapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, contactTypes)
         typeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinnerContactType.adapter = typeAdapter

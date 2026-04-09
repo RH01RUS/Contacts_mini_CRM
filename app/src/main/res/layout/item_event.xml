@@ -6,7 +6,7 @@
     android:layout_margin="4dp"
     app:cardCornerRadius="8dp"
     app:cardElevation="2dp"
-    app:cardBackgroundColor="?android:attr/colorBackground">
+    app:cardBackgroundColor="?attr/colorSurface">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -154,7 +154,7 @@
                 android:background="?selectableItemBackgroundBorderless"
                 android:contentDescription="Позвонить"
                 android:src="@android:drawable/ic_menu_call"
-                android:tint="#4CAF50"
+                android:tint="@color/badge_green"
                 android:scaleType="centerInside"
                 android:padding="8dp" />
 
@@ -166,7 +166,7 @@
                 android:background="?selectableItemBackgroundBorderless"
                 android:contentDescription="SMS"
                 android:src="@android:drawable/ic_menu_send"
-                android:tint="#2196F3"
+                android:tint="@color/badge_blue"
                 android:scaleType="centerInside"
                 android:padding="8dp" />
 
@@ -178,7 +178,7 @@
                 android:background="?selectableItemBackgroundBorderless"
                 android:contentDescription="Email"
                 android:src="@drawable/ic_email"
-                android:tint="#FF5722"
+                android:tint="@color/badge_orange"
                 android:scaleType="centerInside"
                 android:padding="8dp" />
 
@@ -190,7 +190,7 @@
                 android:background="?selectableItemBackgroundBorderless"
                 android:contentDescription="WhatsApp"
                 android:src="@drawable/ic_whatsapp"
-                android:tint="#25D366"
+                android:tint="@color/badge_green"
                 android:scaleType="centerInside"
                 android:padding="8dp" />
 
@@ -202,7 +202,7 @@
                 android:background="?selectableItemBackgroundBorderless"
                 android:contentDescription="Telegram"
                 android:src="@drawable/ic_telegram"
-                android:tint="#26A5E4"
+                android:tint="@color/badge_blue"
                 android:scaleType="centerInside"
                 android:padding="8dp" />
 
@@ -214,7 +214,7 @@
                 android:background="?selectableItemBackgroundBorderless"
                 android:contentDescription="Синхронизировать"
                 android:src="@android:drawable/stat_notify_sync"
-                android:tint="#9C27B0"
+                android:tint="@color/badge_purple"
                 android:scaleType="centerInside"
                 android:padding="8dp" />
 

@@ -113,24 +113,24 @@ class DashboardFragment : Fragment() {
         binding.errorView.isVisible = true
         binding.errorText.text = message
         binding.scrollView.isVisible = false
-        binding.emptyView.isVisible = false
+        binding.emptyView.root.isVisible = false
     }
 
     private fun hideError() {
         binding.errorView.isVisible = false
-        if (binding.emptyView.isVisible == false) {
+        if (binding.emptyView.root.isVisible == false) {
             binding.scrollView.isVisible = true
         }
     }
 
     private fun showEmpty() {
-        binding.emptyView.isVisible = true
+        binding.emptyView.root.isVisible = true
         binding.scrollView.isVisible = false
         binding.errorView.isVisible = false
     }
 
     private fun hideEmpty() {
-        binding.emptyView.isVisible = false
+        binding.emptyView.root.isVisible = false
         if (binding.errorView.isVisible == false) {
             binding.scrollView.isVisible = true
         }

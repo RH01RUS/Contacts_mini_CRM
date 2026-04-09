@@ -49,8 +49,7 @@ class EventListFragment : Fragment() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var eventAdapter: EventAdapter
     private lateinit var searchView: SearchView
-    private lateinit var emptyView: LinearLayout
-    private lateinit var emptyTextView: TextView
+    private lateinit var emptyView: com.example.contactmanager.databinding.ViewEmptyStateBinding
     private lateinit var progressBar: ProgressBar
     private lateinit var chipGroupEventType: ChipGroup
     private lateinit var chipAllEvents: Chip
@@ -111,7 +110,9 @@ class EventListFragment : Fragment() {
         recyclerView = binding.recyclerView
         searchView = binding.searchView
         emptyView = binding.emptyView
-        emptyTextView = binding.emptyTextView
+        emptyView.emptyIcon.setImageResource(R.drawable.ic_events_empty)
+        emptyView.emptyTitle.text = getString(R.string.empty_events_title)
+        emptyView.emptySubtitle.text = getString(R.string.empty_events_subtitle)
         progressBar = binding.progressBar
         chipGroupEventType = binding.chipGroupEventType
         chipAllEvents = binding.chipAllEvents
@@ -285,10 +286,10 @@ class EventListFragment : Fragment() {
 
     private fun updateEmptyView(isEmpty: Boolean) {
         if (isEmpty) {
-            emptyView.visibility = View.VISIBLE
+            emptyView.root.visibility = View.VISIBLE
             recyclerView.visibility = View.GONE
         } else {
-            emptyView.visibility = View.GONE
+            emptyView.root.visibility = View.GONE
             recyclerView.visibility = View.VISIBLE
         }
     }

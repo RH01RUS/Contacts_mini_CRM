@@ -9,7 +9,7 @@
         android:id="@+id/editSearch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Введите имя или номер телефона"
+        android:hint="@string/search_hint_name_or_phone"
         android:inputType="text"
         android:padding="12dp"
         android:background="@drawable/bg_edittext"
@@ -17,14 +17,12 @@
         android:textColorHint="?android:attr/textColorHint"
         android:singleLine="true" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnSearch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Поиск"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="?attr/colorPrimary"
-        android:textColor="@android:color/white" />
+        android:text="@string/search"
+        android:layout_marginTop="8dp" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -47,7 +45,7 @@
         android:id="@+id/emptyText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ничего не найдено"
+        android:text="@string/nothing_found"
         android:gravity="center"
         android:textSize="16sp"
         android:textColor="?android:attr/textColorSecondary"

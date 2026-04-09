@@ -53,5 +53,3 @@
 - **Асинхронность:** [Coroutines](https://kotlin.github.io/kotlinx.coroutines/) + [Flow](https://kotlinlang.org/docs/flow.html)
 - **UI/UX:** Material Design 3, ViewBinding, Navigation Component, RecyclerView, Swipe-to-Delete
 - **Интеграции:** ContentResolver (импорт контактов), Calendar Provider (синхронизация с Google-календарём)
-
----

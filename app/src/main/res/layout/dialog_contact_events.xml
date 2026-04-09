@@ -18,6 +18,8 @@
             android:id="@+id/tvContactName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
             android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="?android:attr/textColorPrimary" />
@@ -26,6 +28,9 @@
             android:id="@+id/tvContactPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autoLink="phone"
+            android:ellipsize="end"
+            android:maxLines="1"
             android:textSize="14sp"
             android:textColor="?android:attr/textColorSecondary"
             android:layout_marginTop="4dp" />
@@ -33,20 +38,18 @@
     </LinearLayout>
 
     <!-- Кнопка добавления события -->
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnAddEvent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="+ Добавить событие"
-        android:backgroundTint="?attr/colorPrimary"
-        android:textColor="@android:color/white"
+        android:text="@string/add_event"
         android:layout_marginBottom="16dp" />
 
     <!-- Счетчики событий в виде чипсов -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Статистика событий:"
+        android:text="@string/event_stats_title"
         android:textSize="14sp"
         android:textStyle="bold"
         android:textColor="?android:attr/textColorPrimary"
@@ -64,8 +67,11 @@
             style="@style/Widget.MaterialComponents.Chip.Entry"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Встречи (0)"
-            app:chipBackgroundColor="#4CAF50"
+            android:checkable="false"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="@string/event_stats_meetings_0"
+            app:chipBackgroundColor="@color/event_chip_meetings"
             app:chipIconVisible="false"
             app:closeIconVisible="false"
             android:textColor="@android:color/white" />
@@ -75,8 +81,11 @@
             style="@style/Widget.MaterialComponents.Chip.Entry"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Звонки (0)"
-            app:chipBackgroundColor="#2196F3"
+            android:checkable="false"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="@string/event_stats_calls_0"
+            app:chipBackgroundColor="@color/event_chip_calls"
             app:chipIconVisible="false"
             app:closeIconVisible="false"
             android:textColor="@android:color/white" />
@@ -86,8 +95,11 @@
             style="@style/Widget.MaterialComponents.Chip.Entry"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Другое (0)"
-            app:chipBackgroundColor="#FF9800"
+            android:checkable="false"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="@string/event_stats_other_0"
+            app:chipBackgroundColor="@color/event_chip_other"
             app:chipIconVisible="false"
             app:closeIconVisible="false"
             android:textColor="@android:color/white" />
@@ -98,7 +110,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
-            app:chipBackgroundColor="#9C27B0"
+            android:checkable="false"
+            android:clickable="false"
+            android:focusable="false"
+            app:chipBackgroundColor="@color/event_chip_extra"
             app:chipIconVisible="false"
             app:closeIconVisible="false"
             android:textColor="@android:color/white"
@@ -109,8 +124,11 @@
             style="@style/Widget.MaterialComponents.Chip.Entry"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Всего: 0"
-            app:chipBackgroundColor="#F44336"
+            android:checkable="false"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="@string/event_stats_total_0"
+            app:chipBackgroundColor="@color/event_chip_total"
             app:chipIconVisible="false"
             app:closeIconVisible="false"
             android:textColor="@android:color/white" />

@@ -12,7 +12,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Контакт:"
+            android:text="@string/contact_colon"
             android:textStyle="bold"
             android:layout_marginBottom="4dp" />
 
@@ -25,7 +25,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Тип мероприятия:"
+            android:text="@string/event_type_colon"
             android:textStyle="bold"
             android:layout_marginBottom="4dp" />
 
@@ -38,15 +38,15 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Дата:"
+            android:text="@string/date_colon"
             android:textStyle="bold"
             android:layout_marginBottom="4dp" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnSelectDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Выбрать дату"
+            android:text="@string/select_date"
             android:layout_marginBottom="8dp" />
 
         <TextView
@@ -61,15 +61,15 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Время:"
+            android:text="@string/time_colon"
             android:textStyle="bold"
             android:layout_marginBottom="4dp" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnSelectTime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Выбрать время"
+            android:text="@string/select_time"
             android:layout_marginBottom="8dp" />
 
         <TextView
@@ -84,7 +84,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Заметка:"
+            android:text="@string/note_colon"
             android:textStyle="bold"
             android:layout_marginBottom="4dp" />
 
@@ -102,7 +102,7 @@
             android:id="@+id/checkboxSyncToCalendar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Добавить в Google Календарь"
+            android:text="@string/sync_to_calendar"
             android:checked="true"
             android:layout_marginBottom="16dp" />
 

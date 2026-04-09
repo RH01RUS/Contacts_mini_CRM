@@ -32,8 +32,7 @@ class ContactLogListFragment : Fragment() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var logAdapter: ContactLogAdapter
     private lateinit var searchView: SearchView  // Теперь это android.widget.SearchView
-    private lateinit var emptyView: LinearLayout
-    private lateinit var emptyTextView: TextView
+    private lateinit var emptyView: com.example.contactmanager.databinding.ViewEmptyStateBinding
     private lateinit var progressBar: ProgressBar
 
     // Переменные для свайпа
@@ -75,7 +74,9 @@ class ContactLogListFragment : Fragment() {
         recyclerView = binding.recyclerView
         searchView = binding.searchView  // Теперь это android.widget.SearchView
         emptyView = binding.emptyView
-        emptyTextView = binding.emptyTextView
+        emptyView.emptyIcon.setImageResource(R.drawable.ic_history)
+        emptyView.emptyTitle.text = getString(R.string.empty_logs_title)
+        emptyView.emptySubtitle.text = getString(R.string.empty_logs_subtitle)
         progressBar = binding.progressBar
     }
 
@@ -189,10 +190,10 @@ class ContactLogListFragment : Fragment() {
 
     private fun updateEmptyView(isEmpty: Boolean) {
         if (isEmpty) {
-            emptyView.visibility = View.VISIBLE
+            emptyView.root.visibility = View.VISIBLE
             recyclerView.visibility = View.GONE
         } else {
-            emptyView.visibility = View.GONE
+            emptyView.root.visibility = View.GONE
             recyclerView.visibility = View.VISIBLE
         }
     }

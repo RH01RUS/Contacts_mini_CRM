@@ -58,6 +58,26 @@
 
     <!-- События -->
     <string name="add_event">Добавить событие</string>
+    <string name="search">Поиск</string>
+    <string name="date">Дата</string>
+    <string name="time">Время</string>
+    <string name="contact_colon">Контакт:</string>
+    <string name="type_colon">Тип:</string>
+    <string name="note_colon">Заметка:</string>
+    <string name="contact_type_colon">Тип контакта:</string>
+    <string name="contact_quality_colon">Качество контакта:</string>
+    <string name="event_type_colon">Тип мероприятия:</string>
+    <string name="date_colon">Дата:</string>
+    <string name="time_colon">Время:</string>
+    <string name="contact_history_title">История контактов:</string>
+    <string name="nothing_found">Ничего не найдено</string>
+    <string name="search_hint_name_or_phone">Введите имя или номер телефона</string>
+    <string name="additional_info">Дополнительная информация</string>
+    <string name="log_note_hint">Краткая заметка по контакту…</string>
+    <string name="log_note_hint_short">Краткая заметка…</string>
+    <string name="no_logs">Нет записей в журнале</string>
+    <string name="retry">Повторить</string>
+    <string name="no_data_to_display">📭 Нет данных для отображения</string>
     <string name="new_event">Новое событие</string>
     <string name="edit_event">Редактировать событие</string>
     <string name="event_details">Детали события</string>
@@ -75,6 +95,13 @@
     <string name="other">Другое</string>
     <string name="sync_to_calendar">Синхронизировать с календарем</string>
 
+    <!-- Диалог событий контакта -->
+    <string name="event_stats_title">Статистика событий:</string>
+    <string name="event_stats_meetings_0">Встречи (0)</string>
+    <string name="event_stats_calls_0">Звонки (0)</string>
+    <string name="event_stats_other_0">Другое (0)</string>
+    <string name="event_stats_total_0">Всего: 0</string>
+
     <!-- Журнал контактов -->
     <string name="contact_log">Журнал контактов</string>
     <string name="add_log">Добавить запись</string>
@@ -91,5 +118,15 @@
     <string name="telegram_type">Telegram</string>
     <string name="email_type">Email</string>
     <string name="meeting_type">Личная встреча</string>
+
+    <!-- Пустые состояния -->
+    <string name="empty_contacts_title">Нет контактов</string>
+    <string name="empty_contacts_subtitle">Нажмите кнопку + для добавления</string>
+    <string name="empty_events_title">Нет событий</string>
+    <string name="empty_events_subtitle">Нажмите кнопку + для добавления</string>
+    <string name="empty_logs_title">Нет записей в журнале</string>
+    <string name="empty_logs_subtitle">Создайте первую запись, чтобы начать вести историю</string>
+    <string name="empty_dashboard_title">Нет данных для статистики</string>
+    <string name="empty_dashboard_subtitle">Добавьте контакты и события, чтобы увидеть аналитику</string>
 
 </resources>

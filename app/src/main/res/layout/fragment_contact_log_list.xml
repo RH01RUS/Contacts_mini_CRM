@@ -16,22 +16,11 @@
         android:layout_height="0dp"
         android:layout_weight="1" />
 
-    <LinearLayout
+    <include
         android:id="@+id/emptyView"
+        layout="@layout/view_empty_state"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:visibility="gone">
-
-        <TextView
-            android:id="@+id/emptyTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Нет записей в журнале"
-            android:textSize="16sp"
-            android:textColor="?android:attr/textColorSecondary" />
-    </LinearLayout>
+        android:layout_height="match_parent" />
 
     <ProgressBar
         android:id="@+id/progressBar"

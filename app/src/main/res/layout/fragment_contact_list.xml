@@ -194,44 +194,13 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Empty View -->
-    <LinearLayout
+    <include
         android:id="@+id/emptyView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:visibility="gone"
+        layout="@layout/view_empty_state"
         app:layout_constraintTop_toBottomOf="@id/filterScrollView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
-
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:src="@drawable/ic_contacts_empty"
-            android:tint="?android:attr/textColorSecondary"
-            android:layout_marginBottom="16dp" />
-
-        <TextView
-            android:id="@+id/emptyTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Нет контактов"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="?android:attr/textColorPrimary"
-            android:layout_marginBottom="8dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Нажмите кнопку + для добавления"
-            android:textSize="16sp"
-            android:textColor="?android:attr/textColorSecondary"
-            android:gravity="center" />
-
-    </LinearLayout>
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- FAB -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton

@@ -14,7 +14,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Контакт:"
+            android:text="@string/contact_colon"
             android:textStyle="bold"
             android:textSize="14sp"
             android:layout_marginBottom="4dp"
@@ -34,7 +34,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Тип контакта:"
+            android:text="@string/contact_type_colon"
             android:textStyle="bold"
             android:textSize="14sp"
             android:layout_marginBottom="4dp"
@@ -64,14 +64,12 @@
                 android:orientation="vertical"
                 android:layout_marginEnd="8dp">
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnSelectDate"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:text="Дата"
-                    android:textSize="14sp"
-                    android:backgroundTint="?attr/colorPrimary"
-                    android:textColor="@android:color/white" />
+                    android:text="@string/date"
+                    android:textSize="14sp" />
 
                 <TextView
                     android:id="@+id/textSelectedDate"
@@ -92,14 +90,12 @@
                 android:orientation="vertical"
                 android:layout_marginStart="8dp">
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnSelectTime"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:text="Время"
-                    android:textSize="14sp"
-                    android:backgroundTint="?attr/colorPrimary"
-                    android:textColor="@android:color/white" />
+                    android:text="@string/time"
+                    android:textSize="14sp" />
 
                 <TextView
                     android:id="@+id/textSelectedTime"
@@ -119,7 +115,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Качество контакта:"
+            android:text="@string/contact_quality_colon"
             android:textStyle="bold"
             android:textSize="14sp"
             android:layout_marginBottom="8dp"
@@ -146,7 +142,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Заметка:"
+            android:text="@string/note_colon"
             android:textStyle="bold"
             android:textSize="14sp"
             android:layout_marginBottom="4dp"
@@ -157,7 +153,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:hint="Краткая заметка по контакту..."
+            android:hint="@string/log_note_hint"
             android:inputType="textMultiLine"
             android:minLines="2"
             android:maxLines="3"
